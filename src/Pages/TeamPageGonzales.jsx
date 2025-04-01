@@ -1,0 +1,57 @@
+import React from 'react';
+import Header from '../Components/Header.jsx';
+import Footer from '../Components/Footer.jsx';
+import { Link } from 'react-router-dom';
+import ProjectsSlider from '../Components/ProjectsSlider.jsx';
+
+import Rocket from '../assets/Rocket.png';
+import image1 from '../assets/image1.jpg';
+import image2 from '../assets/image2.jpg';
+import image3 from '../assets/image3.jpg';
+
+import TeamPortfolioGonzales from '../Components/TeamPortfolioGonzales.jsx';
+import WhatIDoGonzales from '../Components/WhatIDoGonzales.jsx';
+
+
+const TeamPageGonzales = () => {
+  const images = [image1, image2, image3];
+  return (
+    <div className="homepage min-h-screen relative">
+      <Header />
+
+      <div className='flex gap-2 ml-[6%] mt-[6%] mb-[2%]'>
+        <Link to="/balatayo" >   
+          <button className='h-6 w-6 bg-[#5878E0] rounded-full border-3'>   </button>
+        </Link>
+
+        <Link to="/abreu" >  
+          <button className='h-6 w-6 bg-[#F1E167] rounded-full border-3'>  </button>
+        </Link>
+
+        <Link to="/gonzales" >  
+          <button className='h-6 w-6 bg-[#FF4A4A] rounded-full border-3'> </button>
+        </Link>
+      </div>
+  
+      <TeamPortfolioGonzales />
+
+      <WhatIDoGonzales />
+
+      <ProjectsSlider images={images} />
+
+      <div className="flex flex-col items-center mt-20">
+        <button className="flex items-center"> 
+          <img src={Rocket} alt="Home" className="h-[95px] w-[95px] ml-3" /> 
+        </button>
+        <p className="text-[2.5rem] text-[#FFFFFF] leading-[1.2] mb-10">
+          Back on top
+        </p>
+      </div>
+
+      <Footer />
+
+    </div>
+  );
+};
+
+export default TeamPageGonzales;
