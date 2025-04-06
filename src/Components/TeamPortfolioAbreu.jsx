@@ -18,120 +18,135 @@ const TeamPortfolioAbreu = () => {
 
   return (
   <div className="min-h-screen relative">  
-    <div className="ml-28 mt-[1%]">
-            <p className="text-[22rem] text-[#FFFFFF] text-stroke leading-[0.7]">
-              Hello, <br /> I'm <span className="text-[#F1E167]">Abreu.</span>
+    <div className="mt-[1%] md:m-2">
+            <p className="text-[clamp(4rem,18vw,25rem)] text-[#FFFFFF] text-strokesmall leading-[0.7] ml-[4%]">
+              Hello, <br /> I'm <span className="text-[#F1E167]">Xy.</span>
             </p>
     
-            <p className="max-w-[850px] mx-auto text-[2.5rem] text-[#fff] text-left ml-5 mt-[3%]">
+            <p className="max-w-[300px] mx-auto text-[1.2rem] text-[#fff] text-left ml-[4%] mt-[3%] md:text-[1.8rem] md:max-w-[600px] lg:text-[2rem] lg:max-w-[700px] xl:text-[2.2rem] xl:max-w-[750px] 2xl:text-[2.8rem] 2xl:max-w-[2000px] ">
             As a 3rd-year student at CVSU, I have a strong passion for graphic design and illustration. I enjoy expressing creativity through drawing, creating logos, and editing videos and photos. I also like exploring web design, always looking for new ways to make each project uniquely.
             </p>
+
+            <img src={Abreu} alt="AbreuImage" className="h-[300px] w-[300px] mt-[2%] ml-[4%] md:hidden"/>
     
-            <div className="flex mt-[3%] gap-6">
-              <div>
-                <p className="max-w-[288px] mx-auto text-[2.5rem] text-[#fff] text-left ml-5 leading-[3]">
-                  Web Designing <br />
-                  Logo Design <br />
-                  Illustration <br />
-                  Photo/Video Editing <br />
-                  <p className='text-strokesmall'> <span className='text-[#5878E0]'> Personal </span> Skills </p>
-                </p>
-              </div>
-    
-              <div className="flex flex-col gap-4 mt-[2.5%]">
-    
-                {/* Stat 1 */}
-                <div className="w-120 ml-15 h-7 bg-white relative rounded ">
-                  <div
-                    className="absolute top-0 left-0 h-7 bg-gradient-to-r from-[#2C17EC] to-[#8BEDA9] "
-                    style={{ width: '60%' }}
-                  ></div>
-                </div>
-                
-                {/* Stat 2 */}
-                <div className="w-120 ml-15 h-7 bg-white relative mt-[14%] rounded">
-                  <div
-                    className="absolute top-0 left-0 h-7 bg-gradient-to-r from-[#2C17EC] to-[#8BEDA9] "
-                    style={{ width: '50%' }}
-                  ></div>
-                </div>
-                
-                {/* Stat 3 */}
-                <div className="w-120 ml-15 h-7 bg-white relative mt-[14%] rounded">
-                  <div
-                    className="absolute top-0 left-0 h-7 bg-gradient-to-r from-[#2C17EC] to-[#8BEDA9] "
-                    style={{ width: '70%' }}
-                  ></div>
-                </div>
-                
-                {/* Stat 4 */}
-                <div className="w-120 h-7 ml-15 bg-white relative mt-[14%] rounded">
-                  <div
-                    className="top-0 left-0 h-7 bg-gradient-to-r from-[#2C17EC] to-[#8BEDA9]"
-                    style={{ width: '80%' }}
-                  ></div>
-                </div>
-    
-                
-              </div>
-    
-              <div>
-                <p className="max-w-[220px] mx-auto text-[2.5rem] text-[#fff] text-left ml-5 leading-[3]">
-                  60% <br />
-                  50% <br />
-                  70% <br />
-                  80% <br />
-                </p>
-              </div>
-    
-              <img src={Abreu} alt="AbreuImage" className="h-[665px] w-[665px] ml-[10%] mt-[-20%]" />
-    
-            </div>
+            <div className="flex mt-[10%] gap-5">
+        <div className="flex-1">
+          <div className="text-[1.2rem] text-[#fff] ml-2 space-y-2 md:text-[1.8rem] md:ml-[4%] lg:text-[2rem] xl:text-[2.2rem] 2xl:text-[2.8rem] 2xl:space-y-8">
+            <div className="whitespace-nowrap">Web Designing</div>
+            <div className="whitespace-nowrap">Logo Design</div>
+            <div className="whitespace-nowrap">Illustration</div>
+            <div className="whitespace-nowrap">Photo/Video Editing</div>
           </div>
-    
-          <div className="flex ml-[6%] h-[80px] w-[90%] bg-[#fff]/15 backdrop-blur-md rounded-lg border-3 border-[#fff]/5 shadow-xl mb-30">
-    
-            <div className='flex flex-row space-x-4 h-12 mt-3 ml-5'> 
-              <button className="flex items-center bg-[#78E28F] text-[#24242F] p-2 pl-3 rounded-xl w-45">
-                <img src={Creativity} alt="About Us" className="h-8 w-8" />
-                <span className="ml-5 text-[1.4rem]"> CREATIVITY </span>
-              </button>
-            </div>
+          <p className="hidden md:flex text-[1.6rem] text-[#fff] ml-2 mt-4 md:mt-35 md:text-[1.8rem] lg:text-[2rem] 2xl:text-[2.8rem]">
+            <span className='text-[#5878E0]'> Personal  </span>      Skills
+          </p>
+        </div>
 
-            <div className='flex flex-row space-x-4 h-12 mt-3 ml-5'> 
-              <button className="flex items-center bg-[#E89A6A] text-[#24242F] p-2 pl-5 rounded-xl w-60">
-                <img src={TimeManagement} alt="About Us" className="h-8 w-8" />
-                <span className="ml-5 text-[1.4rem]"> TIME MANAGEMENT </span>
-              </button>
-            </div>
-
-            <div className='flex flex-row space-x-4 h-12 mt-3 ml-5'> 
-              <button className="flex items-center bg-[#6277E0] text-[#24242F] p-2 pl-5 rounded-xl w-85">
-                <img src={TeamworkAndCollaboration} alt="About Us" className="h-8 w-8" />
-                <span className="ml-5 text-[1.4rem]"> TEAMWORK AND COLLABORATION </span>
-              </button>
-            </div>
+        <div className="hidden md:flex flex-col gap-3 mt-[2.4%]">
+          {/* Stat 1 */}
+          <div className="w-40 h-7 bg-white relative rounded md:h-2  lg:mt-[-4%] xl:mt-[-3%] xl:w-100 2xl:mr-15 2xl:w-300 2xl:h-4 2xl:mt-[-2.5%]">
+            <div
+              className="absolute top-0 left-0 h-7 rounded bg-gradient-to-r from-[#C15100] to-[#F4FF56] md:h-2 2xl:h-4"
+              style={{ width: '60%' }}
+            ></div>
           </div>
-    
-          <div className='flex mt-[3%] mb-[1%]'>
-              <p className='text-strokesmall className="max-w-[220px] mx-auto text-[2.5rem] text-[#fff]  ml-[6.2%] '> <span className='text-[#5878E0]'> Find </span> me in </p>
-    
-              <p className='text-strokesmall className="max-w-[220px] mx-auto text-[2.5rem] text-[#fff]  ml-[65%] '> Primary Expertise </p>
+          
+          {/* Stat 2 */}
+          <div className="w-40 h-7 bg-white relative mt-[14%] rounded md:h-2 :md:mt-[18%] lg:mt-[24%] xl:mt-[11%] xl:w-100 2xl:w-300 2xl:h-4 2xl:mt-[5.5%]">
+            <div
+              className="absolute top-0 left-0 h-7 rounded bg-gradient-to-r from-[#C15100] to-[#F4FF56] md:h-2 2xl:h-4"
+              style={{ width: '50%' }}
+            ></div>
           </div>
-    
-          <div className='flex gap-5 ml-[6%]'>
-            <div className="flex h-[80px] w-[4%] bg-[#fff]/15 backdrop-blur-md rounded-lg border-3 border-[#fff]/5 shadow-xl mb-30 "> <img src={Instagram} alt="Logo" className="h-15 w-15 pl-4 pt-4" />
-            </div>
-
-            <div className="flex h-[80px] w-[4%] bg-[#fff]/15 backdrop-blur-md rounded-lg border-3 border-[#fff]/5 shadow-xl mb-30 ml-[71%]"> <img src={Cplusplus} alt="Logo" className="h-16 w-15 pl-4 pt-3" /> </div>
-
-            <div className="flex h-[80px] w-[4%] bg-[#fff]/15 backdrop-blur-md rounded-lg border-3 border-[#fff]/5 shadow-xl mb-30"> <img src={Python} alt="Logo" className="h-16 w-15 pl-4 pt-3" /> </div>
-
-            <div className="flex h-[80px] w-[4%] bg-[#fff]/15 backdrop-blur-md rounded-lg border-3 border-[#fff]/5 shadow-xl mb-30"> <img src={Php} alt="Logo" className="h-16 w-15 pl-4 pt-3" /> </div>
-
-            <div className="flex h-[80px] w-[4%] bg-[#fff]/15 backdrop-blur-md rounded-lg border-3 border-[#fff]/5 shadow-xl mb-30"> <img src={Lightroom} alt="Logo" className="h-16 w-15 pl-4 pt-3" /> </div>
-
+          
+          {/* Stat 3 */}
+          <div className="w-40 h-7 bg-white relative mt-[13%] rounded md:h-2   md:mt-[22%] lg:mt-[25%] xl:mt-[10%] xl:w-100 2xl:w-300 2xl:h-4 2xl:mt-[5.5%]">
+            <div
+              className="absolute top-0 left-0 h-7 rounded bg-gradient-to-r from-[#C15100] to-[#F4FF56] md:h-2 2xl:h-4"
+              style={{ width: '70%' }}
+            ></div>
           </div>
+          
+          {/* Stat 4 */}
+          <div className="w-40 h-7 bg-white relative mt-[14%] rounded md:h-2   md:mt-[18%] lg:mt-[23%] xl:mt-[11%] xl:w-100 2xl:w-300 2xl:h-4 2xl:mt-[4.8%]">
+            <div
+              className="top-0 left-0 h-7 rounded bg-gradient-to-r from-[#C15100] to-[#F4FF56] md:h-2 2xl:h-4"
+              style={{ width: '80%' }}
+            ></div>
+          </div>
+        </div>
+    
+        <div>
+          <p className="text-[1.2rem] text-[#fff] text-left leading-[1.8] ml-20 mr-5  md:text-[1.8rem] md:ml-0 md:mt-[-10%] lg:text-[2rem] xl:text-[2.2rem] 2xl:text-[2.8rem] 2xl:leading-[2.1]">
+            60% <br />
+            80% <br />
+            50% <br />
+            75% <br />
+          </p>
+        </div>
+
+        <img src={Abreu} alt="AbreuImage" className="h-[300px] w-[10%] mt-[2%] ml-[1%] hidden md:flex md:h-[300px] md:w-[500px] lg:h-[400px] lg:w-[400px] lg:mt-[-5%] xl:mr-[8%] xl:h-[500px] xl:w-[500px] xl:mt-[-8%] 2xl:h-[600px] 2xl:w-[600px] 2xl:mt-[-8%] 2xl:mr-[5%]"/>
+    
+      </div>
+    </div>
+    
+    <div className="hidden md:flex ml-2 h-15 w-75 bg-[#fff]/15 backdrop-blur-md rounded-lg border-3 border-[#fff]/5 shadow-xl mb-30 md:w-[97%] md:gap-2 md:pl-1 md:mb-5 2xl:w-[95%] 2xl:gap-5 2xl:pl-8 2xl:mb-15 2xl:mt-8 2xl:ml-[2.5%] 2xl:h-22">
+      <div className="flex flex-row space-x-4 h-8  2xl:h-15 mt-2 ml-1 md:mt-2.5">
+        <button className="flex items-center bg-[#F1E167] text-[#24242F] p-1 pl-2 rounded-md w-40 2xl:w-70 2xl:pl-5 2xl:pt-3 2xl:rounded-xl ">
+          <img src={Creativity} alt="About Us" className="h-6 w-6 2xl:h-10 2xl:w-10 "/>
+          <span className="ml-2 text-[1rem] md:text-[1.6rem] 2xl:text-[2.8rem]"> CREATIVITY </span>
+        </button>
+      </div>
+
+      <div className="flex flex-row space-x-4 h-8  2xl:h-15 mt-2 ml-1 md:mt-2.5"> 
+        <button className="flex items-center bg-[#D1CEFF] text-[#24242F] p-1 pl-1 rounded-md w-20 md:w-55 2xl:w-95 2xl:pl-5 2xl:rounded-xl">
+          <img src={TimeManagement} alt="About Us" className="h-6 w-6 2xl:h-10 2xl:w-10" />
+          <span className="ml-2 text-[1rem] md:text-[1.6rem] 2xl:text-[2.8rem] md:pt-1 "> TIME MANAGEMENT </span>
+        </button>
+      </div>
+
+      <div className="flex flex-row space-x-4 h-8  2xl:h-15 mt-2 ml-1 md:mt-2.5"> 
+        <button className="flex items-center bg-[#ECECEC] text-[#24242F] p-1 pl-1 rounded-md w-30 md:w-82 xl:w-95 2xl:pl-5 2xl:w-150 2xl:rounded-xl">
+          <img src={TeamworkAndCollaboration} alt="About Us" className="h-6 w-6 2xl:h-10 2xl:w-10" />
+          <span className="ml-2 text-[0.8rem] md:text-[1.6rem] 2xl:text-[2.8rem] md:pt-1 "> TEAMWORK AND COLLABORATION </span>
+        </button>
+      </div>
+    </div>
+
+    <div className="flex mt-[3%] mb-[1%] text-[1.6rem] w-full justify-between md:text-[1.8rem] md:mt-[2%] ">
+      <p className="text-[#fff] ml-[4%] md:md:ml-[2%] lg:text-[2rem] 2xl:text-[2.8rem]">
+        <span className="text-[#5878E0]">Find</span> me in
+      </p>
+
+      <div className="pr-[4%] md:md:pr-[4%] lg:text-[2rem] 2xl:text-[2.8rem]">
+        <p className="text-[#fff]">Primary Expertise</p>
+      </div>
+    </div>
+
+      <div className='flex gap-3 ml-[4%] mb-30 md:ml-[2%]'>
+        <div className="flex h-10 w-10 bg-[#fff]/15 backdrop-blur-md border-3 border-[#fff]/5 shadow-xl rounded-md md:h-15 md:w-15 md:pr-1 2xl:h-25 2xl:w-25 2xl:pr-2"> 
+          <img src={Instagram} alt="Logo" className="h-8 w-8 pt-1 md:h-12 md:w-15 2xl:h-20 2xl:w-21 2xl:pl-3 2xl:pt-3" />
+        </div>
+
+        <div className="w-full flex justify-end pr-[4%]  gap-2 ">
+          <div className="flex h-10 w-10 bg-[#fff]/15 backdrop-blur-md border-3 border-[#fff]/5 shadow-xl rounded-md md:h-15 md:w-15 md:pr-1 2xl:h-25 2xl:w-25 2xl:pr-2"> 
+            <img src={Cplusplus} alt="PHP" className="h-8  w-8 pl-1 pt-1 md:h-12 md:w-15 2xl:h-20 2xl:w-21 2xl:pl-3 2xl:pt-3" />
+          </div>
+
+          <div className="flex h-10 w-10 bg-[#fff]/15 backdrop-blur-md border-3 border-[#fff]/5 shadow-xl rounded-md md:h-15 md:w-15 md:pr-1 2xl:h-25 2xl:w-25 2xl:pr-2"> 
+            <img src={Python} alt="Java" className="h-8 w-8 pl-1 pt-1 md:h-12 md:w-15 2xl:h-20 2xl:w-21 2xl:pl-3 2xl:pt-3" />
+          </div>
+
+          <div className="flex h-10 w-10 bg-[#fff]/15 backdrop-blur-md border-3 border-[#fff]/5 shadow-xl rounded-md md:h-15 md:w-15 md:pr-1 2xl:h-25 2xl:w-25 2xl:pr-2"> 
+            <img src={Php} alt="C++" className="h-8 w-8 pl-1 pt-1 md:h-12 md:w-15 2xl:h-20 2xl:w-21 2xl:pl-3 2xl:pt-3" />
+          </div>
+
+          <div className="flex h-10 w-10 bg-[#fff]/15 backdrop-blur-md border-3 border-[#fff]/5 shadow-xl rounded-md md:h-15 md:w-15 md:pr-1 2xl:h-25 2xl:w-25 2xl:pr-2"> 
+            <img src={Lightroom} alt="C++" className="h-8 w-8 pl-1 pt-1 md:h-12 md:w-15 2xl:h-20 2xl:w-21 2xl:pl-3 2xl:pt-3" />
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 };

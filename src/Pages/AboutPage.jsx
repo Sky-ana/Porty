@@ -6,64 +6,71 @@ import Rarrow from '../assets/Rarrow.png';
 import Larrow from '../assets/Larrow.png';
 import Rocket from '../assets/Rocket.png';
 
+import Group from '../assets/groupPic.jpg';
+
 const AboutPage = () => {
   return (
     <div>
       <Header />
 
       <div className=''> 
-        <div className="meteor-container">
-          <div className="meteor" style={{ left: '-60%', animationDelay: '0s' }}></div>
-          <div className="meteor" style={{ left: '-80%', animationDelay: '40s' }}></div>
-        </div>
-
-        <p className='text-[22rem] text-[#FFFFFF] text-stroke text-center'> ABOUT <span className='text-[#F49959]'> US </span>  </p>
+        <p className='text-[clamp(6rem,20vw,25rem)] text-[#FFFFFF] text-strokesmall text-center'> ABOUT <span className='text-[#F49959]'> US </span>  </p>
         
         <div className='flex flex-row'>
 
-          <div className='ml-[11%]'> 
-            <p className='max-w-7xl mx-auto text-[2.5rem] text-[#FFFFFF]'>
-              <span className='text-strokesmall'>TEAM </span><br/>
-              <span className='text-[#5878E0] text-strokesmall'>•Balatayo </span> <br/>
-              <span className='text-[#F1E167] text-strokesmall'>•Abreu </span><br/>
-              <span className='text-[#FF4A4A] text-strokesmall'>•Gonzales </span>
+          <div className='ml-[5%]'> 
+            <p className='max-w-7xl mx-auto text-[1.5rem] text-[#FFFFFF]'>
+              <span className='lg:text-[2rem] 2xl:text-[3rem]'>TEAM </span><br/>
+              <span className='text-[#5878E0] lg:text-[2rem] 2xl:text-[2.5rem]'>•Balatayo </span> <br/>
+              <span className='text-[#F1E167] lg:text-[2rem] 2xl:text-[2.5rem]'>•Abreu </span><br/>
+              <span className='text-[#FF4A4A] lg:text-[2rem] 2xl:text-[2.5rem]'>•Gonzales </span>
             </p>
           </div>
 
           <div className='text-left'>
-            <p className='max-w-7xl mx-auto text-[2.5rem] text-[#FFFFFF] ml-60'> 
-              Glooblesnarp the Wobbletoad waltzed through a gelatinous forest of neon-colored pineapples, humming the ancient lullaby of forgotten cheese wheels. The sky above crackled with electric spaghetti, twisting itself into cryptic hieroglyphs only understood by sentient vacuum cleaners. Meanwhile, a squad of existentially confused paperclips debated the philosophy of sock dimensions, unaware that the great Marmalade Kraken 
+            <p className='max-w-[280px] mx-auto text-[1.2rem] leading-[1.2] text-[#FFFFFF] ml-[15%] md:max-w-[580px] md:text-[1.5rem] lg:max-w-[820px] lg:text-[2rem] xl:max-w-[1200px] xl:text-[2rem] xl:max-w-[1600px] 2xl:text-[2.5rem]'> 
+              3MINDS is an initiative conceived and developed by a group of Bachelor of Science in Information Technology (BSIT) students from Cavite State University - Imus Campus. This collaborative project aims to merge our diverse individual skills and expertise into a unified portfolio website. Through this platform, we aspire to not only showcase our personal competencies but also demonstrate the power of collective effort and synergy. By intertwining our unique talents, 3MINDS embodies the essence of teamwork and shared vision, reflecting our commitment to innovation and excellence in the field of Information Technology.
             </p>
           </div>
 
         </div>
 
-        <div className="flex ml-[10%] h-[800px] w-[80%] bg-[#fff]/15 backdrop-blur-md rounded-lg border-3 border-[#8F88EF]/40 shadow-xl mt-40 mb-30"> </div>
+        <img
+          img src={Group} alt="GonzalesImage"
+          className="ml-[6%] h-auto w-[90%] bg-[#fff]/15 backdrop-blur-md rounded-lg border-3 border-[#8F88EF]/40 shadow-xl mt-20 mb-30 2xl:mt-[8%]"
+        />
 
-         <div className="flex justify-center items-center gap-9">
-            <img src={Larrow} alt="Home" className="h-[95px] w-[95px] ml-3" />
-            <span className='text-[17rem] text-[#FFFFFF] text-stroke'> MEET THE TEAM </span>
-            <img src={Rarrow} alt="Home" className="h-[95px] w-[95px] ml-3" />
+
+
+         <div className="flex justify-center items-center gap-3">
+            <img src={Larrow} alt="Home" className="h-[30px] w-[30px] lg:h-[50px] lg:w-[50px] 2xl:h-[90px] 2xl:w-[90px]" />
+            <span className='text-[clamp(2rem,13vw,25rem)] text-[#FFFFFF] text-strokesmall'> MEET THE TEAM </span>
+            <img src={Rarrow} alt="Home" className="h-[30px] w-[30px] lg:h-[50px] lg:w-[50px] 2xl:h-[90px] 2xl:w-[90px]" />
           </div>
 
-          <div className="flex flex-row gap-5 justify-center items-center mt-10">
-            <div className="w-40 h-40 bg-[#5878E0] rounded-full"></div>
-            <div className="w-40 h-40 bg-[#F1E167] rounded-full"></div>
-            <div className="w-40 h-40 bg-[#FF4A4A] rounded-full"></div>
+          <div className="flex flex-row gap-5 justify-center items-center mt-5">
+            <div className="w-12 h-12 bg-[#5878E0] rounded-full"></div>
+            <div className="w-12 h-12 bg-[#F1E167] rounded-full"></div>
+            <div className="w-12 h-12 bg-[#FF4A4A] rounded-full"></div>
           </div>
 
-          <p className='max-w-7xl mx-auto text-[2.5rem] text-[#FFFFFF] leading-[1.2] mt-20 text-center'> 
-            Glooblesnarp the Wobbletoad waltzed through a gelatinous forest of neon-colored pineapples, humming the ancient lullaby of forgotten cheese wheels. The sky above crackled with electric spaghetti, twisting itself into cryptic hieroglyphs only understood by sentient vacuum cleaners. 
+          <p className='max-w-[370px] mx-auto text-[1.2rem] text-[#FFFFFF] leading-[1.2] mt-20 text-center md:max-w-[580px] md:text-[1.8rem] lg:max-w-[700px] lg:text-[2rem] xl:max-w-[900px] 2xl:text-[2.5rem] 2xl:max-w-[1200px] 2xl:mb-[5%]'> 
+            Behind 3MINDS is a dedicated team, driven by a shared passion for design, development, and problem-solving. Each member brings unique skills and ideas, working collaboratively to turn creative visions into reality. Our expertise spans branding, digital art, and web solutions, ensuring a balance of innovation and technical excellence.
           </p>
       </div>
 
       <Team />
 
-      <div className="flex flex-col items-center mt-20">
+
+      <div className="flex flex-col items-center mt-[5%] 2xl:mt-[10%]">
         <button className="flex items-center"> 
-          <img src={Rocket} alt="Home" className="h-[95px] w-[95px] ml-3" /> 
+          <img 
+            src={Rocket} 
+            alt="Home" 
+            className="h-[50px] w-[50px] ml-3 sm:h-[50px] sm:w-[50px] md:h-[60px] md:w-[60px] lg:h-[70px] lg:w-[70px] xl:h-[70px] xl:w-[70px] 2xl:h-[80px] 2xl:w-[80px]" 
+          /> 
         </button>
-        <p className="text-[2.5rem] text-[#FFFFFF] leading-[1.2] mb-10">
+        <p className="text-[1.2rem] text-[#FFFFFF] leading-[1.2] mb-10 sm:text-[1.5rem] md:text-[1.5rem] lg:text-[2rem] xl:text-[2.1rem] 2xl:text-[2.5rem]">
           Back on top
         </p>
       </div>

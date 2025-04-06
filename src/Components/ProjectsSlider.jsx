@@ -36,16 +36,16 @@ const ProjectsSlider = ({ images }) => {
     
     <div className="relative">
       <div>
-        <p className="text-[22rem] text-[#FFFFFF] text-stroke ml-[3.5%]"> Projects </p> 
+        <p className="text-[clamp(1rem,20vw,25rem)] text-[#FFFFFF] ml-[4%]"> Projects </p> 
       </div>
   
       <div className="flex justify-center items-center relative">
         
-        <button onClick={handlePrev} className="z-50">
-          <img src={Back} alt="Back" className="h-20 w-20" />
+        <button onClick={handlePrev} className="z-50 mt-[-20%] md:mt-[-10%] ">
+          <img src={Back} alt="Next" className="h-6 w-60 md:h-10 md:w-60 lg:h-15 lg:w-60 2xl:h-25" />
         </button>
 
-        <div className="relative h-[900px] w-[90rem] bg-[#fff]/15 backdrop-blur-md rounded-lg border border-[#8F88EF]/20 shadow-xl mb-20 mx-4 overflow-hidden">
+        <div className="relative h-50 w-1000 bg-[#fff]/15 backdrop-blur-md rounded-lg border border-[#8F88EF]/20 shadow-xl mb-20 mx-4 overflow-hidden md:h-120 md:w-1000 lg:h-150 lg:w-1000 xl:h-180 xl:w-1000 2xl:h-350 2xl:w-1000">
           
           <img
             src={images[currentIndex]}
@@ -73,8 +73,8 @@ const ProjectsSlider = ({ images }) => {
           )}
         </div>
 
-        <button onClick={handleNext} className="z-50">
-          <img src={Next} alt="Next" className="h-20 w-20" />
+        <button onClick={handleNext} className="z-50 mt-[-20%] md:mt-[-10%] ">
+          <img src={Next} alt="Next" className="h-6 w-60 md:h-10 md:w-60 lg:h-15 lg:w-60 2xl:h-25" />
         </button>
       </div>
     </div>

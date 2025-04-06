@@ -17,7 +17,7 @@ const TeamPageBalatayo = () => {
     <div className="homepage min-h-screen relative">
       <Header />
 
-      <div className='flex gap-2 ml-[6%] mt-[6%] mb-[2%]'>
+      <div className='flex gap-2 ml-[4%] mt-[6%] mb-[2%]'>
         <Link to="/balatayo" >   
           <button className='h-6 w-6 bg-[#5878E0] rounded-full border-3'>   </button>
         </Link>
@@ -31,19 +31,19 @@ const TeamPageBalatayo = () => {
         </Link>
       </div>
         
-  
-  
       <TeamPortfolioBalatayo />
-
-      <WhatIDoBalatayo />
 
       <ProjectsSlider images={images} />
 
-      <div className="flex flex-col items-center mt-20">
+      <div className="flex flex-col items-center mt-[10%] 2xl:mt-[10%]">
         <button className="flex items-center"> 
-          <img src={Rocket} alt="Home" className="h-[95px] w-[95px] ml-3" /> 
+          <img 
+            src={Rocket} 
+            alt="Home" 
+            className="h-[50px] w-[50px] ml-3 sm:h-[50px] sm:w-[50px] md:h-[60px] md:w-[60px] lg:h-[70px] lg:w-[70px] xl:h-[70px] xl:w-[70px] 2xl:h-[80px] 2xl:w-[80px]" 
+          /> 
         </button>
-        <p className="text-[2.5rem] text-[#FFFFFF] leading-[1.2] mb-10">
+        <p className="text-[1.2rem] text-[#FFFFFF] leading-[1.2] mb-10 sm:text-[1.5rem] md:text-[1.5rem] lg:text-[2rem] xl:text-[2.1rem] 2xl:text-[2.5rem]">
           Back on top
         </p>
       </div>

@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Lalezar&family=Secular+One&display=swap');
 
+
+
+
 :root {
   --font-roboto: 'Jersey 15', sans-serif;
 }
 
 body {
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
-  position: relative;
   font-family: "Jersey 15", sans-serif;
   cursor: url('./assets/Cursor.svg') 4 4, auto;
   background-image: linear-gradient(to bottom, #171D2B, #28313E, #0C1622);

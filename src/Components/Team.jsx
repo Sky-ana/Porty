@@ -11,25 +11,25 @@ import { Link } from 'react-router-dom';
 const Team = () => {
   return (
     <div className='flex justify-center mt-20'>
-      <div className="h-[800px] w-[80%] bg-[#fff]/15 backdrop-blur-md rounded-lg border-3 border-[#8F88EF]/20 shadow-xl mb-20">
+      <div className="h-[350px] w-[90%] bg-[#fff]/15 backdrop-blur-md rounded-lg border-3 border-[#8F88EF]/20 shadow-xl mb-20 md:h-[440px] md:w-[90%] lg:h-[550px] lg:w-[90%] xl:w-[80%] xl:h-[650px] 2xl:w-[75%] 2xl:h-[1000px]">
 
-        <div className="flex flex-row justify-center gap-6 pt-20">
+        <div className="flex flex-row justify-center pt-10 gap-1 p-2 md:gap-3 2xl:pt-20 2xl:gap-10">
           {/* Column 1 */}
           <div className="flex flex-col items-center">
             <Link to="/balatayo" >
-              <img src={Balatayo} alt="BalatayoImage" className="h-[365px] w-[365px]" />
+              <img src={Balatayo} alt="BalatayoImage" className="h-[100px] w-[100px] md:h-[200px] md:w-[200px] lg:h-[250px] lg:w-[250px] xl:h-[350px] xl:w-[350px] 2xl:h-[450px] 2xl:w-[450px]" />
               </Link>
-            <p className="text-[2.5rem] text-[#5878E0] text-strokesmall mt-4">E. Balatayo</p>
-            <p className="text-[2.5rem] text-[#fff] text-strokesmall mt-10">Backend Developer</p>
+            <p className="text-[1.2rem] text-[#5878E0] mt-4 md:text-[1.8rem] lg:text-[2rem] 2xl:text-[3.2rem]">E. Balatayo</p>
+            <p className="text-[1.2rem] text-[#fff] mt-5 text-center md:text-[1.5rem] lg:text-[1.8rem] 2xl:text-[3rem]">Backend Developer</p>
           </div>
           
           {/* Column 2 */}
           <div className="flex flex-col items-center">
             <Link to="/abreu" >
-              <img src={Abreu} alt="ABREUImage" className="h-[365px] w-[365px]" />
+              <img src={Abreu} alt="ABREUImage" className="h-[100px] w-[100px] md:h-[200px] md:w-[200px] lg:h-[250px] lg:w-[250px] xl:h-[350px] xl:w-[350px] 2xl:h-[450px] 2xl:w-[450px]" />
             </Link>
-            <p className="text-[2.5rem] text-[#F1E167] text-strokesmall mt-4">X. Abreu</p>
-            <p className="text-[2.5rem] text-[#fff] text-strokesmall max-w-lg text-center mt-10">
+            <p className="text-[1.2rem] text-[#F1E167]  mt-4 md:text-[1.8rem] lg:text-[2rem] 2xl:text-[3.2rem]">X. Abreu</p>
+            <p className="text-[1.2rem] text-[#fff]  max-w-lg text-center mt-5 md:text-[1.5rem] lg:text-[1.8rem] 2xl:text-[3rem]">
               Frontend Developer<br />Logo Designer
             </p>
           </div>
@@ -37,10 +37,10 @@ const Team = () => {
           {/* Column 3 */}
           <div className="flex flex-col items-center ">
             <Link to="/gonzales" >
-              <img src={Gonzales} alt="GonzalesImage" className="h-[365px] w-[365px]" />
+              <img src={Gonzales} alt="GonzalesImage" className="h-[100px] w-[100px] md:h-[200px] md:w-[200px] lg:h-[250px] lg:w-[250px] xl:h-[350px] xl:w-[350px] 2xl:h-[450px] 2xl:w-[450px]" />
             </Link>
-            <p className="text-[2.5rem] text-[#FF4A4A] text-strokesmall mt-4">M. Gonzales</p>
-            <p className="text-[2.5rem] text-[#fff] text-strokesmall max-w-lg text-center mt-10">
+            <p className="text-[1.2rem] text-[#FF4A4A] mt-4 md:text-[1.8rem] lg:text-[2rem] 2xl:text-[3.2rem]">M. Gonzales</p>
+            <p className="text-[1.2rem] text-[#fff] max-w-lg text-center mt-5 md:text-[1.5rem] lg:text-[1.8rem] 2xl:text-[3rem]">
               Frontend Developer<br />UI/UX Designer
             </p>
           </div>

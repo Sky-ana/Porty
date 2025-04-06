@@ -11,63 +11,59 @@ import PersonIcon from '../assets/Person.svg';
 
 const ProjectsGonzales = () => {
   return (
-    <div div className="homepage min-h-screen">
+    <div div className="homepage-bg min-h-screen">
       <Header />
-      <p className='text-[22rem] text-[#FFFFFF] text-stroke ml-[3%] '> PROJECTS </p>
-      <div className='flex gap-2 ml-[3.5%] mt-[-6%] mb-[5%]'>
-        <Link to="/balatayoprojects" >   
-          <button className='h-10 w-10 bg-[#5878E0] rounded-sm border-3'>   
-            <img src={PersonIcon} alt="Logo" className="h-7 pl-[3px]  ml-[2%] mt-[0.6%] " />
-          </button>
-        </Link>
 
-        <Link to="/abreuprojects" >  
-          <button className='h-10 w-10 bg-[#F1E167] rounded-sm border-3'>  
-            <img src={PersonIcon} alt="Logo" className="h-7 pl-[3px]  ml-[2%] mt-[0.6%] " />
-          </button>
-        </Link>
+      <div>
+        <p className='text-[clamp(4rem,16vw,25rem)] text-[#FFFFFF] text-strokesmall ml-[3%]'> <span className='text-[#FF4A4A]'> SOLO </span> PROJECTS </p>
+        <p className='max-w-[350px] mx-auto text-[1.2rem] text-[#fff] text-left ml-[4%] mt-[3%] md:text-[1.8rem] md:mt-[-2%] md:max-w-[600px] lg:mt-[-5%] lg:text-[2rem] lg:max-w-[900px] xl:text-[2.2rem] xl:max-w-[1000px] 2xl:text-[2.8rem] 2xl:max-w-[2000px]'> 
+          <span className='text-[#FF4A4A]'> Gonzales: </span> I have engaged in various creative endeavors, including digital art, pixel art (such as game assets and concept designs), graphic design, UI/UX design, and front-end web development.
+        </p>
 
-        <Link to="/gonzalesprojects" >  
-          <button className='h-10 w-10 bg-[#FF4A4A] rounded-sm border-3'> 
-            <img src={PersonIcon} alt="Logo" className="h-7 pl-[3px]  ml-[2%] mt-[0.6%] " />
-          </button>
-        </Link>
-      </div>
+        <div className='flex gap-1 justify-center mt-[10%] mb-[10%] md:mb-[5%] lg:mb-[5%] 2xl:mb-[5%]'>
+          <Link to="/balatayoprojects" >   
+            <button className='h-5 w-5 bg-[#5878E0] rounded-sm border-3 md:h-10 md:w-10 2xl:h-15 2xl:w-15'> 
+              <img src={PersonIcon} alt="Logo" className="h-3 pl-[1px] mt-[0.6%] md:pl-[3px] md:h-7 2xl:h-11" />
+            </button>
+          </Link>
 
-  
+          <Link to="/abreuprojects" >  
+            <button className='h-5 w-5 bg-[#F1E167] rounded-sm border-3  md:h-10 md:w-10 2xl:h-15 2xl:w-15'> 
+              <img src={PersonIcon} alt="Logo" className="h-3 pl-[1px] md:pl-[3px] mt-[0.6%] md:h-7 2xl:h-11" />
+            </button>
+          </Link>
 
-      <p className='max-w-[1500px] text-[2.5rem] text-[#FFFFFF] leading-[1.2] ml-[3%] mb-[8%]'>
-        Glooblesnarp the Wobbletoad waltzed through a gelatinous forest of neon-colored pineapples, humming the ancient lullaby of forgotten cheese wheels.
-      </p>
-
-      <Carousel />
-
-      <p className='text-[20rem] text-[#FFFFFF] text-stroke ml-[3%] mt-[3%] mb-[5%]'> <span className='text-[#FF4A4A]'> SOLO </span> PROJECTS </p>
-
-      <div className='flex gap-10 justify-center '>
-        <div className="ml-[3%] h-[900px] w-[900px] bg-[#fff]/15 backdrop-blur-md rounded-lg border-3 border-[#8F88EF]/40 shadow-xl">
+          <Link to="/gonzalesprojects" >  
+            <button className='h-5 w-5 bg-[#FF4A4A] rounded-sm border-3  md:h-10 md:w-10 2xl:h-15 2xl:w-15'>
+              <img src={PersonIcon} alt="Logo" className="h-3 pl-[1px] mt-[0.6%] md:pl-[3px] md:h-7 2xl:h-11" />
+            </button>
+          </Link>
         </div>
 
-        <div className=" h-[900px] w-[900px] bg-[#fff]/15 backdrop-blur-md rounded-lg border-3 border-[#8F88EF]/40 shadow-xl"></div>
-      </div>
+        <Carousel />
 
-      <div className='flex gap-10 justify-center mt-[2%]'>
-        <div className="ml-[3%] h-[900px] w-[900px] bg-[#fff]/15 backdrop-blur-md rounded-lg border-3 border-[#8F88EF]/40 shadow-xl">
+        <div className="m-[2%] h-[400px] w-[96%] bg-[#fff]/15 backdrop-blur-md rounded-lg border-3 border-[#8F88EF]/40 shadow-xl mt-40 md:h-[500px] lg:h-[800px] xl:h-[850px] 2xl:h-[1000px] ">
         </div>
 
-        <div className=" h-[900px] w-[900px] bg-[#fff]/15 backdrop-blur-md rounded-lg border-3 border-[#8F88EF]/40 shadow-xl"></div>
-      </div>
-      
-      <div className='flex gap-10 justify-center mt-[2%]'>
-        <div className="ml-[3%] h-[900px] w-[1850px] bg-[#fff]/15 backdrop-blur-md rounded-lg border-3 border-[#8F88EF]/40 shadow-xl">
+        <div className="m-[2%] h-[400px] w-[96%] bg-[#fff]/15 backdrop-blur-md rounded-lg border-3 border-[#8F88EF]/40 shadow-xl mt-10 md:h-[500px] lg:h-[800px] xl:h-[850px] 2xl:h-[1000px]">
+        
         </div>
+
+        <div className="m-[2%] h-[400px] w-[96%] bg-[#fff]/15 backdrop-blur-md rounded-lg border-3 border-[#8F88EF]/40 shadow-xl mt-10 mb-[5%] md:h-[500px] lg:h-[800px] xl:h-[850px] 2xl:h-[1000px]">
+        </div>
+
+
       </div>
 
-      <div className="flex flex-col items-center mt-20">
+      <div className="flex flex-col items-center mt-[15%] 2xl:mt-[10%]">
         <button className="flex items-center"> 
-          <img src={Rocket} alt="Home" className="h-[95px] w-[95px] ml-3" /> 
+          <img 
+            src={Rocket} 
+            alt="Home" 
+            className="h-[50px] w-[50px] ml-3 sm:h-[50px] sm:w-[50px] md:h-[60px] md:w-[60px] lg:h-[70px] lg:w-[70px] xl:h-[70px] xl:w-[70px] 2xl:h-[80px] 2xl:w-[80px]" 
+          /> 
         </button>
-        <p className="text-[2.5rem] text-[#FFFFFF] leading-[1.2] mb-10">
+        <p className="text-[1.2rem] text-[#FFFFFF] leading-[1.2] mb-10 sm:text-[1.5rem] md:text-[1.5rem] lg:text-[2rem] xl:text-[2.1rem] 2xl:text-[2.5rem]">
           Back on top
         </p>
       </div>
