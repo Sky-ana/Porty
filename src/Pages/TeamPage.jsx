@@ -22,26 +22,26 @@ import PersonIcon from '../assets/Person.svg';
 
 const TeamPage = () => {
   return (
-    <div className="homepage min-h-screen relative">
+    <div className="homepage min-h-screen relative select-none">
       <Header />
 
       <p className='text-[clamp(5rem,20vw,25rem)] leading-15 text-[#FFFFFF] text-strokesmall ml-[3%] mt-[8%] text-center 2xl:leading-55'> <span className='text-[#F49959]'>3</span>MINDS Team</p>
 
       <div className='flex gap-2 justify-center mt-[10%] mb-[-10%] md:mb-[3%] lg:mb-[2%] 2xl:mb-[4%]'>
         <Link to="/balatayo" >   
-          <button className='h-5 w-5 bg-[#5878E0] rounded-sm border-3 md:h-10 md:w-10 2xl:h-15 2xl:w-15'> 
+          <button className='custom-pointer h-5 w-5 bg-[#5878E0] rounded-sm border-3 md:h-10 md:w-10 2xl:h-15 2xl:w-15 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer'> 
             <img src={PersonIcon} alt="Logo" className="h-2 pl-[3px] mt-[0.6%] md:h-7 2xl:h-11" />
           </button>
         </Link>
 
         <Link to="/abreu" >  
-          <button className='h-5 w-5 bg-[#F1E167] rounded-sm border-3 md:h-10 md:w-10 2xl:h-15 2xl:w-15'> 
+          <button className='custom-pointer h-5 w-5 bg-[#F1E167] rounded-sm border-3 md:h-10 md:w-10 2xl:h-15 2xl:w-15 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer'> 
             <img src={PersonIcon} alt="Logo" className="h-2 pl-[3px] mt-[0.6%] md:h-7 2xl:h-11" />
           </button>
         </Link>
 
         <Link to="/gonzales" >  
-          <button className='h-5 w-5 bg-[#FF4A4A] rounded-sm border-3 md:h-10 md:w-10 2xl:h-15 2xl:w-15'>
+          <button className='custom-pointer h-5 w-5 bg-[#FF4A4A] rounded-sm border-3 md:h-10 md:w-10 2xl:h-15 2xl:w-15 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer'>
             <img src={PersonIcon} alt="Logo" className="h-2 pl-[3px] mt-[0.6%] md:h-7 2xl:h-11" />
           </button>
         </Link>
@@ -114,7 +114,7 @@ const TeamPage = () => {
 
 
 
-      <div className="ml-[2%] h-[200px] w-[95%] bg-[#fff]/10 backdrop-blur-md rounded-lg border-2 border-[#8F88EF]/40 shadow-xl mt-10 xl:h-[240px] 2xl:h-[380px] 2xl:mt-50">
+      <div className="ml-[2%] h-[200px] w-[95%] bg-[#fff]/10 backdrop-blur-md rounded-lg border-2 border-[#8F88EF]/40 shadow-xl mt-10 xl:h-[240px] 2xl:h-[380px] 2xl:mt-50 hover:scale-101">
         <div className='flex ml-[2%] mt-[2%] p-2  lg:mt-[1%] xl:mt-[0.8%]'>
           <img src={secondPersonIcon} alt="Logo" className="h-5 w-5 lg:mt-[0.8%] xl:mt-[0.7%] 2xl:h-8 2xl:w-8 2xl:mt-[0.5%]" />
           <p className='mx-2 text-[1.4rem] text-[#Fff] mt-[-1%] ml-10 lg:mt-[-0.5%] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[3.2rem]'> <span className='text-[#5878E0]'> Balatayo, </span> Brielle Edrian A. </p>
@@ -137,7 +137,7 @@ const TeamPage = () => {
         </div>
       </div>
 
-      <div className="ml-[2%] h-[200px] w-[95%] bg-[#fff]/10 backdrop-blur-md rounded-lg border-2 border-[#8F88EF]/40 shadow-xl mt-5    xl:h-[240px] 2xl:h-[380px]">
+      <div className="ml-[2%] h-[200px] w-[95%] bg-[#fff]/10 backdrop-blur-md rounded-lg border-2 border-[#8F88EF]/40 shadow-xl mt-5    xl:h-[240px] 2xl:h-[380px] hover:scale-101">
       <div className='flex ml-[2%] mt-[2%] p-2  lg:mt-[1%]'>
           <img src={firstPersonIcon} alt="Logo" className="h-5 w-5 lg:mt-[0.8%] xl:mt-[0.7%] 2xl:h-8 2xl:w-8 2xl:mt-[0.5%]" />
           <p className='mx-2 text-[1.4rem] text-[#Fff] mt-[-1%] ml-10 lg:mt-[-0.5%] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[3.2rem]'> <span className='text-[#F1E167]'> Abreu, </span> Xyrill John F. </p>
@@ -159,7 +159,7 @@ const TeamPage = () => {
         </div>
       </div>
 
-      <div className="ml-[2%] h-[200px] w-[95%] bg-[#fff]/10 backdrop-blur-md rounded-lg border-2 border-[#8F88EF]/40 shadow-xl mt-5  md:h-[210px]  xl:h-[240px] 2xl:h-[380px]">
+      <div className="ml-[2%] h-[200px] w-[95%] bg-[#fff]/10 backdrop-blur-md rounded-lg border-2 border-[#8F88EF]/40 shadow-xl mt-5  md:h-[210px]  xl:h-[240px] 2xl:h-[380px] hover:scale-101">
       <div className='flex ml-[2%] mt-[2%] p-2  lg:mt-[1%]'>
           <img src={thirdPersonIcon} alt="Logo" className="h-5 w-5 lg:mt-[0.8%] xl:mt-[0.7%] 2xl:h-8 2xl:w-8 2xl:mt-[0.5%]" />
           <p className='mx-2 text-[1.4rem] text-[#Fff] mt-[-1%] ml-10 lg:mt-[-0.5%] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[3.2rem]'> <span className='text-[#FF4A4A]'> Gonzales, </span> Michael Rhoi L. </p>
@@ -182,12 +182,15 @@ const TeamPage = () => {
         
       </div>
 
-      <div className="flex flex-col items-center mt-[5%] 2xl:mt-[10%]">
-        <button className="flex items-center"> 
+      <div className="flex flex-col items-center mt-[30%] 2xl:mt-[10%]">
+        <button className="flex items-center" 
+        onClick={() => window.scrollTo({ top: 0})}
+        
+        > 
           <img 
             src={Rocket} 
             alt="Home" 
-            className="h-[50px] w-[50px] ml-3 sm:h-[50px] sm:w-[50px] md:h-[60px] md:w-[60px] lg:h-[70px] lg:w-[70px] xl:h-[70px] xl:w-[70px] 2xl:h-[80px] 2xl:w-[80px]" 
+            className="custom-pointer h-[50px] w-[50px] ml-3 sm:h-[50px] sm:w-[50px] md:h-[60px] md:w-[60px] lg:h-[70px] lg:w-[70px] xl:h-[70px] xl:w-[70px] 2xl:h-[80px] 2xl:w-[80px] animate-bounce cursor-pointer hover:scale-115 hover:opacity-75" 
           /> 
         </button>
         <p className="text-[1.2rem] text-[#FFFFFF] leading-[1.2] mb-10 sm:text-[1.5rem] md:text-[1.5rem] lg:text-[2rem] xl:text-[2.1rem] 2xl:text-[2.5rem]">

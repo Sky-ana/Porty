@@ -8,7 +8,7 @@ import projectsIcon from '../assets/1.png';
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between px-4 py-2 mt-[1%] sm:px-6 md:px-8 lg:px-10">
+    <header className="flex items-center justify-between px-4 py-2 mt-[1%] sm:px-6 md:px-8 lg:px-10 select-none">
 
       <div className="flex items-center flex-shrink-0">
         <img 
@@ -25,29 +25,29 @@ const Header = () => {
 
 
 
-      <nav className="flex items-center space-x-0 sm:space-x-3 md:space-x-4 lg:space-x-5">
-        <Link to="/" className="p-1 hover:opacity-80 transition-opacity">
+      <nav className="flex items-center space-x-0 sm:space-x-3 md:space-x-4 lg:space-x-5 cursor-pointer">
+        <Link to="/" className="custom-pointer p-1 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer">
           <img 
             src={homeIcon} 
             alt="Home" 
             className="h-10 w-10 sm:h-10 sm:w-10 md:h-15 md:w-12"
           />
         </Link>
-        <Link to="/about" className="p-1 hover:opacity-80 transition-opacity">
+        <Link to="/about" className="custom-pointer p-1 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer">
           <img 
             src={aboutUsIcon} 
             alt="About Us" 
             className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12"
           />
         </Link>
-        <Link to="/team" className="p-1 hover:opacity-80 transition-opacity">
+        <Link to="/team" className="custom-pointer p-1 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer">
           <img 
             src={teamMemberIcon} 
             alt="Team" 
             className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12"
           />
         </Link>
-        <Link to="/projects" className="p-1 hover:opacity-80 transition-opacity">
+        <Link to="/projects" className="custom-pointer p-1 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer">
           <img 
             src={projectsIcon} 
             alt="Projects" 

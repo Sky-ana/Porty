@@ -1,13 +1,46 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="./assets/3minds.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3Minds</title>
   </head>
-  <body">
+  <body>
     <div id="root"></div>
+
+
     <script type="module" src="/src/main.jsx"></script>
+
+    <script>
+      function createMeteor() {
+        const meteor = document.createElement("div");
+        meteor.className = "meteor";
+      
+        const startY = Math.random() * window.innerHeight * 0.5;
+        const variations = ['fast', 'slow', 'color2', 'color3'];
+        meteor.classList.add(variations[Math.floor(Math.random() * variations.length)]);
+      
+        meteor.style.top = `${startY}px`;
+        meteor.style.left = `${Math.random() * 50 - 50}px`;
+        
+        const opacityMultiplier = Math.random() * 0.3 + 0.4;
+        meteor.style.opacity = opacityMultiplier;
+      
+        document.body.appendChild(meteor);
+      
+        meteor.addEventListener("animationend", () => {
+          meteor.remove();
+        });
+      }
+      
+      setInterval(() => {
+        createMeteor();
+        // Reduced chance of double meteors
+        if(Math.random() > 0.9) createMeteor();
+      }, Math.random() * 5000 + 3000);
+      
+    </script>
+
   </body>
 </html>

@@ -28,6 +28,74 @@ body::before {
   z-index: -1;
 }
 
+.meteor {
+  position: fixed;
+  width: 2px;
+  height: 80px;
+  background: linear-gradient(-45deg, 
+    rgba(255,255,255,0.7) 0%,
+    rgba(179,229,252,0.5) 30%,
+    rgba(179,229,252,0.2) 70%,
+    rgba(255,255,255,0) 100%
+  );
+  box-shadow: 0 0 15px 2px rgba(179, 229, 252, 0.3);
+  transform: rotate(-45deg);
+  animation: meteor-fall 2s linear forwards;
+  pointer-events: none;
+  z-index: 1000;
+  filter: blur(1px);
+  border-radius: 50%;
+  top: -100px;
+  opacity: 0.8;
+}
+
+.meteor::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 10px;
+  height: 20px;
+  background: radial-gradient(rgba(179,229,252,0.6), transparent 70%);
+  transform: translateX(-60%);
+}
+
+@keyframes meteor-fall {
+  0% {
+    transform: translateX(-100vw) translateY(-100px) rotate(-45deg);
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(100vw) translateY(100vh) rotate(-45deg);
+    opacity: 0.2;
+  }
+}
+
+.meteor.fast {
+  animation-duration: 8s;
+  opacity: 0.4;
+}
+
+.meteor.slow {
+  animation-duration: 5s;
+}
+
+.meteor.color2 {
+  filter: hue-rotate(40deg);
+  box-shadow: 0 0 15px 2px rgba(255, 182, 193, 0.3);
+}
+
+.meteor.color3 {
+  filter: hue-rotate(160deg);
+  box-shadow: 0 0 15px 2px rgba(147, 112, 219, 0.3);
+}
+
+.custom-pointer {
+  cursor: url('./assets/Pointer.svg'), pointer;
+}
 
 
 

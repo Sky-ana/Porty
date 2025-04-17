@@ -1,13 +1,12 @@
 import React from 'react';
 import '../App.css';
+import { Typewriter } from 'react-simple-typewriter';
 
 import Creativity from '../assets/Creativity.svg';
 import Adaptability from '../assets/Adaptability.svg';
 import TeamworkAndCollaboration from '../assets/TeamworkAndCollaboration.svg';
 import Gonzales from '../assets/GonzalesImage.png';
 import linkedinIcon from '../assets/Linkedin.png';
-import instagramIcon from '../assets/Instagram.png';
-import facebookIcon from '../assets/Facebook.png';
 import Aseprite from '../assets/AsepriteIcon.svg';
 import AdobeIllustrator from '../assets/AdobeIllustratorIcon.svg';
 import Procreate from '../assets/ProcreateIcon.svg';
@@ -19,16 +18,25 @@ import Photoshop from '../assets/PhotoshopIcon.svg';
 const TeamPortfolioGonzales = () => {
 
     return (
-    <div className="min-h-screen relative">  
+    <div className="min-h-screen relative select-none">  
       <div className="mt-[1%] md:m-2">
               <p className="text-[clamp(4rem,18vw,25rem)] text-[#FFFFFF] text-strokesmall leading-[0.7] ml-[4%]">
                 Hello, <br /> I'm <span className="text-[#FF4A4A]">Gonzales.</span>
               </p>
       
               <p className="max-w-[300px] mx-auto text-[1.2rem] text-[#fff] text-left ml-[4%] mt-[3%] md:text-[1.8rem] md:max-w-[600px] lg:text-[2rem] lg:max-w-[700px] xl:text-[2.2rem] xl:max-w-[750px] 2xl:text-[2.8rem] 2xl:max-w-[2000px] ">
-                I'm a 3rd year student of CVSU, i have a passion for graphic design and Illustrations. I always try to add my own touch on every creative projects i take on.
+                <Typewriter
+                  words={["I'm a 3rd year student of CVSU, i have a passion for graphic design and Illustrations. I always try to add my own touch on every creative projects i take on."]}
+                  loop={1}
+                  typeSpeed={50}
+                  deleteSpeed={0}
+                  delaySpeed={1000}
+                />
               </p>
-              <img src={Gonzales} alt="AbreuImage" className="h-[300px] w-[300px] mt-[2%] ml-[4%] md:hidden"/>
+
+              <div className="flex flex-col items-center">
+                <img src={Gonzales} alt="AbreuImage" className="h-auto w-[80%] mt-[2%] ml-[4%] md:hidden rounded-xl"/>
+              </div>
       
               <div className="flex mt-[10%] gap-5">
           <div className="flex-1">
@@ -45,7 +53,7 @@ const TeamPortfolioGonzales = () => {
   
           <div className="hidden md:flex flex-col gap-3 mt-[2.4%]">
             {/* Stat 1 */}
-            <div className="w-40 h-7 bg-white relative rounded md:h-2  lg:mt-[-4%] xl:mt-[-3%] xl:w-100 2xl:mr-15 2xl:w-300 2xl:h-4 2xl:mt-[-2.5%]">
+            <div className="w-40 h-7 bg-white relative rounded md:h-2  lg:mt-[-4%] xl:mt-[-3%] xl:w-100 2xl:mr-15 2xl:w-150 2xl:h-4 2xl:mt-[-2.5%]">
               <div
                 className="absolute top-0 left-0 h-7 rounded bg-gradient-to-r from-[#EC1717] to-[#EE9D53] md:h-2 2xl:h-4"
                 style={{ width: '60%' }}
@@ -53,7 +61,7 @@ const TeamPortfolioGonzales = () => {
             </div>
             
             {/* Stat 2 */}
-            <div className="w-40 h-7 bg-white relative mt-[14%] rounded md:h-2 :md:mt-[18%] lg:mt-[24%] xl:mt-[11%] xl:w-100 2xl:w-300 2xl:h-4 2xl:mt-[5.5%]">
+            <div className="w-40 h-7 bg-white relative mt-[14%] rounded md:h-2 :md:mt-[18%] lg:mt-[24%] xl:mt-[11%] xl:w-100 2xl:w-150 2xl:h-4 2xl:mt-[10%]">
               <div
                 className="absolute top-0 left-0 h-7 rounded bg-gradient-to-r from-[#EC1717] to-[#EE9D53] md:h-2 2xl:h-4"
                 style={{ width: '40%' }}
@@ -61,7 +69,7 @@ const TeamPortfolioGonzales = () => {
             </div>
             
             {/* Stat 3 */}
-            <div className="w-40 h-7 bg-white relative mt-[13%] rounded md:h-2   md:mt-[22%] lg:mt-[25%] xl:mt-[10%] xl:w-100 2xl:w-300 2xl:h-4 2xl:mt-[5.5%]">
+            <div className="w-40 h-7 bg-white relative mt-[13%] rounded md:h-2   md:mt-[22%] lg:mt-[25%] xl:mt-[10%] xl:w-100 2xl:w-150 2xl:h-4 2xl:mt-[11%]">
               <div
                 className="absolute top-0 left-0 h-7 rounded bg-gradient-to-r from-[#EC1717] to-[#EE9D53] md:h-2 2xl:h-4"
                 style={{ width: '80%' }}
@@ -69,7 +77,7 @@ const TeamPortfolioGonzales = () => {
             </div>
             
             {/* Stat 4 */}
-            <div className="w-40 h-7 bg-white relative mt-[14%] rounded md:h-2   md:mt-[18%] lg:mt-[23%] xl:mt-[11%] xl:w-100 2xl:w-300 2xl:h-4 2xl:mt-[4.8%]">
+            <div className="w-40 h-7 bg-white relative mt-[14%] rounded md:h-2   md:mt-[18%] lg:mt-[23%] xl:mt-[11%] xl:w-100 2xl:w-150 2xl:h-4 2xl:mt-[11%]">
               <div
                 className="top-0 left-0 h-7 rounded bg-gradient-to-r from-[#EC1717] to-[#EE9D53] md:h-2 2xl:h-4"
                 style={{ width: '40%' }}
@@ -86,7 +94,7 @@ const TeamPortfolioGonzales = () => {
             </p>
           </div>
   
-          <img src={Gonzales} alt="AbreuImage" className="h-[300px] w-[10%] mt-[2%] ml-[1%] hidden md:flex md:h-[300px] md:w-[500px] lg:h-[400px] lg:w-[400px] lg:mt-[-5%] xl:mr-[8%] xl:h-[500px] xl:w-[500px] xl:mt-[-8%] 2xl:h-[600px] 2xl:w-[600px] 2xl:mt-[-8%] 2xl:mr-[5%]"/>
+          <img src={Gonzales} alt="GonzalesImage" className="h-[300px] w-[10%] mt-[2%] ml-[1%] hidden md:flex md:h-[320px] md:w-[300px] lg:h-[420px] lg:w-[400px] lg:mt-[-5%] xl:mr-[8%] xl:h-[500px] xl:w-[470px] xl:mt-[-8%] 2xl:h-[600px] 2xl:w-[580px] 2xl:mt-[-8%] 2xl:mr-[5%] rounded-xl"/>
       
         </div>
       </div>
@@ -125,29 +133,29 @@ const TeamPortfolioGonzales = () => {
       </div>
   
         <div className='flex gap-3 ml-[4%] mb-30 md:ml-[2%]'>
-          <div className="flex h-10 w-10 bg-[#fff]/15 backdrop-blur-md border-3 border-[#fff]/5 shadow-xl rounded-md md:h-15 md:w-15 md:pr-1 2xl:h-25 2xl:w-25 2xl:pr-2"> 
-            <img src={linkedinIcon} alt="Logo" className="h-8 w-8 pt-1 md:h-12 md:w-15 2xl:h-20 2xl:w-21 2xl:pl-3 2xl:pt-3" />
+          <div className="flex h-10 w-10 bg-[#fff]/15 backdrop-blur-md border-3 border-[#fff]/5 shadow-xl rounded-md md:h-15 md:w-15 md:pr-1 2xl:h-25 2xl:w-25 2xl:pr-2 hover:scale-110"> 
+            <img src={linkedinIcon} alt="Logo" className="h-8 w-8 pt-1 md:h-12 md:w-15 2xl:h-20 2xl:w-21 2xl:pl-3 2xl:pt-3 " />
           </div>
 
   
           <div className="w-full flex justify-end pr-[4%]  gap-2 ">
-            <div className="flex h-10 w-10 bg-[#fff]/15 backdrop-blur-md border-3 border-[#fff]/5 shadow-xl rounded-md md:h-15 md:w-15 md:pr-1 2xl:h-25 2xl:w-25 2xl:pr-2"> 
+            <div className="flex h-10 w-10 bg-[#fff]/15 backdrop-blur-md border-3 border-[#fff]/5 shadow-xl rounded-md md:h-15 md:w-15 md:pr-1 2xl:h-25 2xl:w-25 2xl:pr-2 hover:scale-110"> 
               <img src={Aseprite} alt="Aseprite" className="h-8  w-8 pl-1 pt-1 md:h-12 md:w-15 2xl:h-20 2xl:w-21 2xl:pl-3 2xl:pt-3" />
             </div>
   
-            <div className="flex h-10 w-10 bg-[#fff]/15 backdrop-blur-md border-3 border-[#fff]/5 shadow-xl rounded-md md:h-15 md:w-15 md:pr-1 2xl:h-25 2xl:w-25 2xl:pr-2"> 
+            <div className="flex h-10 w-10 bg-[#fff]/15 backdrop-blur-md border-3 border-[#fff]/5 shadow-xl rounded-md md:h-15 md:w-15 md:pr-1 2xl:h-25 2xl:w-25 2xl:pr-2 hover:scale-110"> 
               <img src={AdobeIllustrator} alt="Adobe Illustrator" className="h-8 w-8 pl-1 pt-1 md:h-12 md:w-15 2xl:h-20 2xl:w-21 2xl:pl-3 2xl:pt-3" />
             </div>
   
-            <div className="flex h-10 w-10 bg-[#fff]/15 backdrop-blur-md border-3 border-[#fff]/5 shadow-xl rounded-md md:h-15 md:w-15 md:pr-1 2xl:h-25 2xl:w-25 2xl:pr-2"> 
+            <div className="flex h-10 w-10 bg-[#fff]/15 backdrop-blur-md border-3 border-[#fff]/5 shadow-xl rounded-md md:h-15 md:w-15 md:pr-1 2xl:h-25 2xl:w-25 2xl:pr-2 hover:scale-110"> 
               <img src={Procreate} alt="Procreate" className="h-8 w-8 pl-1 pt-1 md:h-12 md:w-15 2xl:h-20 2xl:w-21 2xl:pl-3 2xl:pt-3" />
             </div>
 
-            <div className="flex h-10 w-10 bg-[#fff]/15 backdrop-blur-md border-3 border-[#fff]/5 shadow-xl rounded-md md:h-15 md:w-15 md:pr-1 2xl:h-25 2xl:w-25 2xl:pr-2"> 
+            <div className="flex h-10 w-10 bg-[#fff]/15 backdrop-blur-md border-3 border-[#fff]/5 shadow-xl rounded-md md:h-15 md:w-15 md:pr-1 2xl:h-25 2xl:w-25 2xl:pr-2 hover:scale-110"> 
               <img src={Photoshop} alt="Photoshop" className="h-8 w-8 pl-1 pt-1 md:h-12 md:w-15 2xl:h-20 2xl:w-21 2xl:pl-3 2xl:pt-3" />
             </div>
   
-            <div className="flex h-10 w-10 bg-[#fff]/15 backdrop-blur-md border-3 border-[#fff]/5 shadow-xl rounded-md md:h-15 md:w-15 md:pr-1 2xl:h-25 2xl:w-25 2xl:pr-2"> 
+            <div className="flex h-10 w-10 bg-[#fff]/15 backdrop-blur-md border-3 border-[#fff]/5 shadow-xl rounded-md md:h-15 md:w-15 md:pr-1 2xl:h-25 2xl:w-25 2xl:pr-2 hover:scale-110"> 
               <img src={Figma} alt="Figma" className="h-8 w-8 pl-1 pt-1 md:h-12 md:w-15 2xl:h-20 2xl:w-21 2xl:pl-3 2xl:pt-3" />
             </div>
           </div>

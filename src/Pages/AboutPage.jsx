@@ -1,4 +1,6 @@
 import React from 'react';
+import { Typewriter } from 'react-simple-typewriter';
+
 import Header from '../Components/Header.jsx';
 import Footer from '../Components/Footer.jsx';
 import Team from '../Components/Team.jsx';
@@ -6,11 +8,11 @@ import Rarrow from '../assets/Rarrow.png';
 import Larrow from '../assets/Larrow.png';
 import Rocket from '../assets/Rocket.png';
 
-import Group from '../assets/groupPic.jpg';
+import Cover from '../assets/CoverImage.jpeg';
 
 const AboutPage = () => {
   return (
-    <div>
+    <div className='select-none'>
       <Header />
 
       <div className=''> 
@@ -27,16 +29,24 @@ const AboutPage = () => {
             </p>
           </div>
 
-          <div className='text-left'>
-            <p className='max-w-[280px] mx-auto text-[1.2rem] leading-[1.2] text-[#FFFFFF] ml-[15%] md:max-w-[580px] md:text-[1.5rem] lg:max-w-[820px] lg:text-[2rem] xl:max-w-[1200px] xl:text-[2rem] xl:max-w-[1600px] 2xl:text-[2.5rem]'> 
-              3MINDS is an initiative conceived and developed by a group of Bachelor of Science in Information Technology (BSIT) students from Cavite State University - Imus Campus. This collaborative project aims to merge our diverse individual skills and expertise into a unified portfolio website. Through this platform, we aspire to not only showcase our personal competencies but also demonstrate the power of collective effort and synergy. By intertwining our unique talents, 3MINDS embodies the essence of teamwork and shared vision, reflecting our commitment to innovation and excellence in the field of Information Technology.
+          <div className="w-full max-w-[1000px] mx-auto text-left ml-[15%]">
+            <p className="w-full text-[1.2rem] text-[#FFFFFF] leading-[1.2] min-h-[120px] lg:text-[2.5rem]">
+              <Typewriter
+                words={[
+                  '3MINDS is a project by BSIT students from Cavite State University - Imus Campus. It combines our individual skills into one portfolio to showcase our work and highlight the value of teamwork, creativity, and shared vision'
+                ]}
+                loop={1}
+                typeSpeed={50}
+                deleteSpeed={0}
+                delaySpeed={1000}
+              />
             </p>
           </div>
 
         </div>
 
         <img
-          img src={Group} alt="GonzalesImage"
+          img src={Cover} alt="CoverImage"
           className="ml-[6%] h-auto w-[90%] bg-[#fff]/15 backdrop-blur-md rounded-lg border-3 border-[#8F88EF]/40 shadow-xl mt-20 mb-30 2xl:mt-[8%]"
         />
 
@@ -62,12 +72,15 @@ const AboutPage = () => {
       <Team />
 
 
-      <div className="flex flex-col items-center mt-[5%] 2xl:mt-[10%]">
-        <button className="flex items-center"> 
+      <div className="flex flex-col items-center mt-[30%] 2xl:mt-[10%]">
+        <button className="flex items-center" 
+        onClick={() => window.scrollTo({ top: 0})}
+        
+        > 
           <img 
             src={Rocket} 
             alt="Home" 
-            className="h-[50px] w-[50px] ml-3 sm:h-[50px] sm:w-[50px] md:h-[60px] md:w-[60px] lg:h-[70px] lg:w-[70px] xl:h-[70px] xl:w-[70px] 2xl:h-[80px] 2xl:w-[80px]" 
+            className="h-[50px] w-[50px] ml-3 sm:h-[50px] sm:w-[50px] md:h-[60px] md:w-[60px] lg:h-[70px] lg:w-[70px] xl:h-[70px] xl:w-[70px] 2xl:h-[80px] 2xl:w-[80px] animate-bounce cursor-pointer custom-pointer hover:scale-115 hover:opacity-75" 
           /> 
         </button>
         <p className="text-[1.2rem] text-[#FFFFFF] leading-[1.2] mb-10 sm:text-[1.5rem] md:text-[1.5rem] lg:text-[2rem] xl:text-[2.1rem] 2xl:text-[2.5rem]">
