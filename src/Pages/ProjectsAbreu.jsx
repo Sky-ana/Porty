@@ -8,12 +8,12 @@ import Rocket from '../assets/Rocket.png';
 import { Link } from 'react-router-dom';
 import PersonIcon from '../assets/Person.svg';
 
-import Pixel1 from '../assets/XPixel1.svg';
+import Pixel1 from '../assets/Logo2.svg';
 import Pixel2 from '../assets/XPixel2.svg';
 import Pixel3 from '../assets/XPixel3.svg';
 import Photo1 from '../assets/XPhoto1.svg';
 import Photo2 from '../assets/XPhoto2.svg';
-import Photo3 from '../assets/XPhoto3.svg';
+import Photo3 from '../assets/Logo1.svg';
 
 
 const ProjectsAbreu = () => {
@@ -26,7 +26,7 @@ const ProjectsAbreu = () => {
         <p className='max-w-[350px] mx-auto text-[1.2rem] text-[#fff] text-left ml-[4%] mt-[3%] md:text-[1.8rem] md:mt-[-2%] md:max-w-[600px] lg:mt-[-5%] lg:text-[2rem] lg:max-w-[900px] xl:text-[2.2rem] xl:max-w-[1000px] 2xl:text-[2.8rem] 2xl:max-w-[2000px]'> 
           <span className='text-[#F1E167]'> Abreu: </span>
           <Typewriter
-            words={['I presents my logo designs, photography, pixel art, and traditional artworks, all displayed with a clean and minimalist layout.']}
+            words={['I presents my logo designs, photography, and pixel art all displayed with a clean and minimalist layout.']}
             loop={1}
             typeSpeed={50}
             deleteSpeed={0}
@@ -34,26 +34,24 @@ const ProjectsAbreu = () => {
           /> 
         </p>
 
-        <div className='flex gap-1 justify-center mt-[10%] mb-[10%] md:mb-[5%] lg:mb-[5%] 2xl:mb-[5%]'>
-          <Link to="/balatayoprojects" >   
-            <button className='custom-pointer h-5 w-5 bg-[#5878E0] rounded-sm border-3 md:h-10 md:w-10 2xl:h-15 2xl:w-15 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer'> 
-              <img src={PersonIcon} alt="Logo" className="h-3 pl-[1px] mt-[0.6%] md:pl-[3px] md:h-7 2xl:h-11" />
+        <div className='flex gap-3 justify-center mt-[15%] mb-[10%] md:mb-[5%] lg:mb-[5%] 2xl:mb-[5%] z-10 relative'>
+          <Link to="/balatayoprojects">
+            <button className='h-8 w-8 bg-[#5878E0] rounded-sm border-2 md:h-10 md:w-10 2xl:h-15 2xl:w-15 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer custom-pointer'>
+              <img src={PersonIcon} alt="Logo" className="h-5 mx-auto md:h-7 2xl:h-11" />
             </button>
           </Link>
-  
-          <Link to="/abreuprojects" >  
-            <button className='custom-pointer h-5 w-5 bg-[#F1E167] rounded-sm border-3  md:h-10 md:w-10 2xl:h-15 2xl:w-15 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer'> 
-              <img src={PersonIcon} alt="Logo" className="h-3 pl-[1px] md:pl-[3px] mt-[0.6%] md:h-7 2xl:h-11" />
+          <Link to="/abreuprojects">
+            <button className='h-8 w-8 bg-[#F1E167] rounded-sm border-2 md:h-10 md:w-10 2xl:h-15 2xl:w-15 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer custom-pointer'>
+              <img src={PersonIcon} alt="Logo" className="h-5 mx-auto md:h-7 2xl:h-11" />
             </button>
           </Link>
-  
-          <Link to="/gonzalesprojects" >  
-            <button className='custom-pointer h-5 w-5 bg-[#FF4A4A] rounded-sm border-3  md:h-10 md:w-10 2xl:h-15 2xl:w-15 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer'>
-              <img src={PersonIcon} alt="Logo" className="h-3 pl-[1px] mt-[0.6%] md:pl-[3px] md:h-7 2xl:h-11" />
+          <Link to="/gonzalesprojects">
+            <button className='h-8 w-8 bg-[#FF4A4A] rounded-sm border-2 md:h-10 md:w-10 2xl:h-15 2xl:w-15 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer custom-pointer'>
+              <img src={PersonIcon} alt="Logo" className="h-5 mx-auto md:h-7 2xl:h-11" />
             </button>
           </Link>
         </div>
-
+        
         <Carousel />
 
         <div className='mt-10 ml-5 mr-5'>

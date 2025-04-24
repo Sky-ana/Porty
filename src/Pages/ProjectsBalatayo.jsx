@@ -30,22 +30,20 @@ const ProjectsBalatayo = () => {
           /> 
         </p>
 
-        <div className='flex gap-1 justify-center mt-[10%] mb-[10%] md:mb-[5%] lg:mb-[5%] 2xl:mb-[5%]'>
-          <Link to="/balatayoprojects" >   
-            <button className='custom-pointer h-5 w-5 bg-[#5878E0] rounded-sm border-3 md:h-10 md:w-10 2xl:h-15 2xl:w-15 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer'> 
-              <img src={PersonIcon} alt="Logo" className="h-3 pl-[1px] mt-[0.6%] md:pl-[3px] md:h-7 2xl:h-11" />
+        <div className='flex gap-3 justify-center mt-[15%] mb-[10%] md:mb-[5%] lg:mb-[5%] 2xl:mb-[5%] z-10 relative'>
+          <Link to="/balatayoprojects">
+            <button className='h-8 w-8 bg-[#5878E0] rounded-sm border-2 md:h-10 md:w-10 2xl:h-15 2xl:w-15 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer custom-pointer'>
+              <img src={PersonIcon} alt="Logo" className="h-5 mx-auto md:h-7 2xl:h-11" />
             </button>
           </Link>
-  
-          <Link to="/abreuprojects" >  
-            <button className='custom-pointer h-5 w-5 bg-[#F1E167] rounded-sm border-3  md:h-10 md:w-10 2xl:h-15 2xl:w-15 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer'> 
-              <img src={PersonIcon} alt="Logo" className="h-3 pl-[1px] md:pl-[3px] mt-[0.6%] md:h-7 2xl:h-11" />
+          <Link to="/abreuprojects">
+            <button className='h-8 w-8 bg-[#F1E167] rounded-sm border-2 md:h-10 md:w-10 2xl:h-15 2xl:w-15 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer custom-pointer'>
+              <img src={PersonIcon} alt="Logo" className="h-5 mx-auto md:h-7 2xl:h-11" />
             </button>
           </Link>
-  
-          <Link to="/gonzalesprojects" >  
-            <button className='custom-pointer h-5 w-5 bg-[#FF4A4A] rounded-sm border-3  md:h-10 md:w-10 2xl:h-15 2xl:w-15 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer'>
-              <img src={PersonIcon} alt="Logo" className="h-3 pl-[1px] mt-[0.6%] md:pl-[3px] md:h-7 2xl:h-11" />
+          <Link to="/gonzalesprojects">
+            <button className='h-8 w-8 bg-[#FF4A4A] rounded-sm border-2 md:h-10 md:w-10 2xl:h-15 2xl:w-15 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer custom-pointer'>
+              <img src={PersonIcon} alt="Logo" className="h-5 mx-auto md:h-7 2xl:h-11" />
             </button>
           </Link>
         </div>
