@@ -132,7 +132,7 @@ const TeamPortfolioGonzales = () => {
         </div>
       </div>
   
-        <div className='flex gap-3 ml-[4%] mb-30 md:ml-[2%]'>
+        <div className='flex gap-3 ml-[4%] mb-10 md:ml-[2%]'>
           <div className="flex h-10 w-10 bg-[#fff]/15 backdrop-blur-md border-3 border-[#fff]/5 shadow-xl rounded-md md:h-15 md:w-15 md:pr-1 2xl:h-25 2xl:w-25 2xl:pr-2 hover:scale-110"> 
             <img src={linkedinIcon} alt="Logo" className="h-8 w-8 pt-1 md:h-12 md:w-15 2xl:h-20 2xl:w-21 2xl:pl-3 2xl:pt-3 " />
           </div>

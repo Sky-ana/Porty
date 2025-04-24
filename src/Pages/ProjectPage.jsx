@@ -75,39 +75,33 @@ const ProjectsPage = () => {
 
       <div>
         <p className='text-[clamp(4rem,18vw,25rem)] text-[#FFFFFF] text-strokesmall ml-[3%]'> PROJECTS </p>
-        <p className='max-w-[300px] mx-auto text-[1.2rem] text-[#fff] text-left ml-[4%] mt-[3%] md:text-[1.8rem] md:mt-[-2%] md:max-w-[600px] lg:mt-[-5%] lg:text-[2rem] lg:max-w-[700px] xl:text-[2.2rem] xl:max-w-[750px] 2xl:text-[2.8rem] 2xl:max-w-[2000px]'> 
-          <Typewriter
-            words={['The 3Minds Team has worked on several projects together. Below are some of the school activities and projects they’ve completed as a group.']}
-            loop={1}
-            typeSpeed={50}
-            deleteSpeed={0}
-            delaySpeed={1000}
-          />
+
+        <p className='max-w-[300px] mx-auto text-[1.2rem] text-[#fff] text-left ml-[4%] mt-[3%] md:text-[1.8rem] md:mt-[-2%] md:max-w-[600px] lg:mt-[-5%] lg:text-[2rem] lg:max-w-[700px] xl:text-[2.2rem] xl:max-w-[750px] 2xl:max-w-[1000px] 2xl:text-[2.8rem]'>
+          The 3Minds Team has worked on several projects together. Below are some of the school activities and projects they’ve completed as a group.
         </p>
 
-        <div className='flex gap-5 justify-center mt-[10%] mb-[-10%] md:mb-[3%] lg:mb-[2%] 2xl:mb-[4%]'>
-          <Link to="/balatayoprojects" >   
-            <button className='custom-pointer h-5 w-5 bg-[#5878E0] rounded-sm border-3 md:h-10 md:w-10 2xl:h-15 2xl:w-15 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer'> 
-              <img src={PersonIcon} alt="Logo" className="h-3 pl-[1px] mt-[0.6%] md:pl-[3px] md:h-7 2xl:h-11" />
+        <div className='flex gap-3 justify-center mt-[15%] mb-[10%] md:mb-[5%] lg:mb-[5%] 2xl:mb-[5%] z-10 relative'>
+          <Link to="/balatayoprojects">
+            <button className='h-5 w-5 bg-[#5878E0] rounded-sm border-2 hover:opacity-75 transition duration-200'>
+              <img src={PersonIcon} alt="Logo" className="h-3 mx-auto" />
             </button>
           </Link>
-  
-          <Link to="/abreuprojects" >  
-            <button className='custom-pointer h-5 w-5 bg-[#F1E167] rounded-sm border-3  md:h-10 md:w-10 2xl:h-15 2xl:w-15 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer'> 
-              <img src={PersonIcon} alt="Logo" className="h-3 pl-[1px] md:pl-[3px] mt-[0.6%] md:h-7 2xl:h-11" />
+          <Link to="/abreuprojects">
+            <button className='h-5 w-5 bg-[#F1E167] rounded-sm border-2 hover:opacity-75 transition duration-200'>
+              <img src={PersonIcon} alt="Logo" className="h-3 mx-auto" />
             </button>
           </Link>
-  
-          <Link to="/gonzalesprojects" >  
-            <button className='custom-pointer h-5 w-5 bg-[#FF4A4A] rounded-sm border-3  md:h-10 md:w-10 2xl:h-15 2xl:w-15 transition delay-10 duration-200 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-75 cursor-pointer'>
-              <img src={PersonIcon} alt="Logo" className="h-3 pl-[1px] mt-[0.6%] md:pl-[3px] md:h-7 2xl:h-11" />
+          <Link to="/gonzalesprojects">
+            <button className='h-5 w-5 bg-[#FF4A4A] rounded-sm border-2 hover:opacity-75 transition duration-200'>
+              <img src={PersonIcon} alt="Logo" className="h-3 mx-auto" />
             </button>
           </Link>
         </div>
 
 
 
-        <div className="flex flex-col items-center">
+
+        <div className="flex flex-col items-center mb-[5%]">
           <div className="relative mx-auto w-[60%] mt-20 mb-5 2xl:mt-[8%] group">
             <img
               src={cadImages[cadIndex]}
