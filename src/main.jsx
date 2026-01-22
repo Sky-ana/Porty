@@ -6,6 +6,5 @@ import Linking from './Pages/Linking'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Linking />
-    
   </StrictMode>,
 )
